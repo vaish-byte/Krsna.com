@@ -1,23 +1,22 @@
-import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
 
 export default function Home() {
   return (
-    <div className="container">
-      <Head>
-        <title>Next.js Starter!</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-      </main>
-
-      <Footer />
-    </div>
-  )
+    <main
+      style={{
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        fontFamily: "Arial, sans-serif",
+        backgroundColor: "#f7f9fc",
+        color: "#111",
+        textAlign: "center",
+        padding: "24px",
+      }}
+    >
+      <h1>PaaS Environment Deployed via AWS Amplify</h1>
+      <p>My PaaS application is live!</p>
+    </main>
+  );
 }
